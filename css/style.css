@@ -1,0 +1,83 @@
+:root {
+    --font-ko: 'Noto Sans KR', sans-serif;
+    --font-en: 'Poppins', sans-serif;
+    --font-ja: 'Noto Sans JP', sans-serif;
+}
+body {
+    font-family: var(--font-ko);
+    background-color: #0F051D;
+    color: #EAE2FF;
+}
+.gradient-text {
+    background: linear-gradient(90deg, #D4B5FF, #A974FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-bg {
+    background-image: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.3) 0%, rgba(124, 58, 237, 0) 60%);
+}
+.btn-primary {
+    background: linear-gradient(90deg, #8A2BE2, #6D28D9);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+}
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.section-glow {
+    position: relative;
+}
+.section-glow::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 300px;
+    background-image: radial-gradient(circle, rgba(169, 116, 255, 0.1), transparent 70%);
+    filter: blur(100px);
+    z-index: -1;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.prose-custom p { margin-bottom: 1.25em; }
+.prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 { margin-bottom: 0.8em; margin-top: 1.5em; }
+.prose-custom ul, .prose-custom ol { margin-bottom: 1.25em; }
+.prose-custom table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.prose-custom th, .prose-custom td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5em 1em;
+    text-align: left;
+}
+.prose-custom thead {
+    background-color: rgba(255, 255, 255, 0.1);
+}
