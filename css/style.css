@@ -1,83 +1,124 @@
-:root {
-    --font-ko: 'Noto Sans KR', sans-serif;
-    --font-en: 'Poppins', sans-serif;
-    --font-ja: 'Noto Sans JP', sans-serif;
+/* 커스텀 스타일 */
+html {
+  scroll-behavior: smooth;
 }
+
 body {
-    font-family: var(--font-ko);
-    background-color: #0F051D;
-    color: #EAE2FF;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #0D0B14;
+  color: #E0E0E0;
 }
-.gradient-text {
-    background: linear-gradient(90deg, #D4B5FF, #A974FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }
+
 .hero-bg {
-    background-image: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.3) 0%, rgba(124, 58, 237, 0) 60%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #0D0B14 70%);
+  position: relative;
+  overflow: hidden;
 }
+
+.glow-text {
+  text-shadow: 0 0 8px rgba(255, 105, 180, 0.7), 0 0 12px rgba(255, 105, 180, 0.5);
+}
+
+.card-bg {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .btn-primary {
-    background: linear-gradient(90deg, #8A2BE2, #6D28D9);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+  background: linear-gradient(90deg, #FF69B4, #8A2BE2);
+  transition: all 0.3s ease;
 }
+
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
 }
-.btn-secondary {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  /* 40px */
+  line-height: 1.2;
 }
-.btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+    /* 56px */
+  }
 }
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+
+/* Header Style */
+.header-nav {
+  background: rgba(13, 11, 20, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s;
 }
-.section-glow {
-    position: relative;
+
+/* New Roadmap Styles */
+.roadmap-line {
+  background: linear-gradient(to bottom, transparent, #8A2BE2, transparent);
 }
-.section-glow::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 300px;
-    background-image: radial-gradient(circle, rgba(169, 116, 255, 0.1), transparent 70%);
-    filter: blur(100px);
-    z-index: -1;
+
+.roadmap-dot {
+  box-shadow: 0 0 0 4px rgba(138, 43, 226, 0.25), 0 0 10px rgba(138, 43, 226, 0.5), 0 0 20px rgba(138, 43, 226, 0.5);
+  animation: pulse 2s infinite;
 }
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+  }
 }
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+.roadmap-card {
+  background: rgba(29, 28, 41, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
-.prose-custom p { margin-bottom: 1.25em; }
-.prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 { margin-bottom: 0.8em; margin-top: 1.5em; }
-.prose-custom ul, .prose-custom ol { margin-bottom: 1.25em; }
-.prose-custom table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
+
+.roadmap-card:hover {
+  border-color: rgba(255, 105, 180, 0.5);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.15);
 }
-.prose-custom th, .prose-custom td {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 0.5em 1em;
-    text-align: left;
+
+/* Comparison Table Styles */
+.comparison-card {
+  background: rgba(29, 28, 41, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
 }
-.prose-custom thead {
-    background-color: rgba(255, 255, 255, 0.1);
+
+.comparison-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-row:last-child {
+  border-bottom: none;
 }

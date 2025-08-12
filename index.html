@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idol Island - 당신의 창작, 더 많은 수익으로</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+</head>
+
+<body class="antialiased">
+
+  <!-- Header / Navigation -->
+  <nav id="main-nav" class="header-nav fixed top-0 left-0 right-0 z-50 p-4">
+    <div class="container mx-auto max-w-screen-xl flex justify-between items-center">
+      <a href="#" class="font-poppins font-bold text-2xl text-white">Idol <span class="text-pink-400">Island</span></a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#why-us" class="text-gray-300 hover:text-pink-400 transition-colors">Why Us</a>
+        <a href="#features" class="text-gray-300 hover:text-pink-400 transition-colors">Features</a>
+        <a href="#revenue" class="text-gray-300 hover:text-pink-400 transition-colors">Revenue</a>
+        <a href="#roadmap" class="text-gray-300 hover:text-pink-400 transition-colors">Roadmap</a>
+        <a href="#discord" class="btn-primary text-white font-bold rounded-full px-5 py-2 text-sm">Join Discord</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <a href="#why-us" class="block text-center py-2 text-gray-300 hover:bg-gray-800">Why Us</a>
+      <a href="#features" class="block text-center py-2 text-gray-300 hover:bg-gray-800">Features</a>
+      <a href="#revenue" class="block text-center py-2 text-gray-300 hover:bg-gray-800">Revenue</a>
+      <a href="#roadmap" class="block text-center py-2 text-gray-300 hover:bg-gray-800">Roadmap</a>
+      <a href="#discord" class="block text-center py-3 mt-2 font-bold bg-pink-500 text-white">Join Discord</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-bg min-h-screen flex items-center justify-center text-center p-6">
+    <div id="particles-js"></div>
+    <div class="z-10" data-aos="fade-up">
+      <h1 class="font-poppins font-black text-5xl md:text-7xl lg:text-8xl text-white">
+        IDOL <span class="text-pink-400 glow-text">ISLAND</span>
+      </h1>
+      <p class="mt-4 text-xl md:text-2xl font-bold text-gray-300">당신의 창작, 상상 이상의 수익으로.</p>
+      <p class="mt-2 text-lg text-gray-400 max-w-3xl mx-auto">
+        업계 최저 수수료 8%, 글로벌 팬덤, 그리고 창작에만 집중할 수 있는 완벽한 환경.
+        <br>버튜버 스킨 메이커를 위한 새로운 우주가 펼쳐집니다.
+      </p>
+      <a href="#discord"
+        class="inline-block btn-primary text-white font-bold text-lg rounded-full px-10 py-4 mt-10 shadow-lg">
+        지금 바로 디스코드 커뮤니티 참여하기
+      </a>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden">
+    <!-- Why Idol Island Section -->
+    <section id="why-us" class="py-20 md:py-32 px-6">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title text-white">수익뿐 아니라, <span class="text-pink-400">작업 환경까지</span> 혁신합니다</h2>
+          <p class="mt-4 text-lg text-gray-400">기존의 틀을 깨고, 오직 창작자만을 위해 모든 것을 바꿨습니다.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <!-- Existing Platforms -->
+          <div class="comparison-card" data-aos="fade-right">
+            <div class="flex items-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400 mr-3" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+              <h3 class="font-poppins text-3xl font-bold text-gray-400">기존 플랫폼</h3>
+            </div>
+            <div class="space-y-2">
+              <div class="comparison-row"><span class="text-gray-400">수수료</span> <span
+                  class="font-bold text-red-400 text-lg">15 ~ 20%</span></div>
+              <div class="comparison-row"><span class="text-gray-400">정산 속도</span> <span
+                  class="font-bold text-red-400 text-lg">최대 30일</span></div>
+              <div class="comparison-row"><span class="text-gray-400">판매 범위</span> <span
+                  class="font-bold text-red-400 text-lg">일부 국가</span></div>
+              <div class="comparison-row"><span class="text-gray-400">결제 방식</span> <span
+                  class="font-bold text-red-400 text-lg">한정적</span></div>
+              <div class="comparison-row"><span class="text-gray-400">법률 지원</span> <span
+                  class="font-bold text-red-400 text-lg">없음</span></div>
+              <div class="comparison-row"><span class="text-gray-400">메이커 지원</span> <span
+                  class="font-bold text-red-400 text-lg">없음</span></div>
+            </div>
+          </div>
+          <!-- Idol Island -->
+          <div class="comparison-card border-purple-500/50" data-aos="fade-left">
+            <div class="flex items-center mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-400 mr-3" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              <h3 class="font-poppins text-3xl font-bold text-white">Idol Island</h3>
+            </div>
+            <div class="space-y-2">
+              <div class="comparison-row"><span class="text-gray-400">수수료</span>
+                <div class="flex items-center"><span class="font-bold text-green-400 text-lg mr-2">8%</span><span
+                    class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">업계 최저</span></div>
+              </div>
+              <div class="comparison-row"><span class="text-gray-400">정산 속도</span> <span
+                  class="font-bold text-green-400 text-lg">즉시 정산</span></div>
+              <div class="comparison-row"><span class="text-gray-400">판매 범위</span> <span
+                  class="font-bold text-green-400 text-lg">글로벌</span></div>
+              <div class="comparison-row"><span class="text-gray-400">결제 방식</span> <span
+                  class="font-bold text-green-400 text-lg">다중 결제</span></div>
+              <div class="comparison-row"><span class="text-gray-400">법률 지원</span> <span
+                  class="font-bold text-green-400 text-lg">전담팀</span></div>
+              <div class="comparison-row"><span class="text-gray-400">메이커 지원</span> <span
+                  class="font-bold text-green-400 text-lg">전담 매니저</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 px-6 bg-[#110F19]">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title text-white">Focus on <span class="text-cyan-400">Creation</span></h2>
+          <p class="mt-4 text-lg text-gray-400">제작 외 모든 과정은 전담 매니저가 대신합니다. 당신은 최고의 작품을 만드는 데만 집중하세요.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">고객 소통 대행</h3>
+            <p class="text-gray-400">의뢰 내용 정리, 피드백 전달 등 모든 커뮤니케이션을 매니저가 처리합니다.</p>
+          </div>
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">일정 관리</h3>
+            <p class="text-gray-400">제작 일정 관리 및 마감 체크로 스트레스 없는 작업 환경을 제공합니다.</p>
+          </div>
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">판매/정산 모니터링</h3>
+            <p class="text-gray-400">투명한 판매 현황과 정산 과정을 실시간으로 확인할 수 있습니다.</p>
+          </div>
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="250">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.916 17.916 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">다국어 번역 지원</h3>
+            <p class="text-gray-400">영어, 일본어 번역 지원으로 글로벌 고객과 원활하게 소통합니다.</p>
+          </div>
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">콜라보 기회 연결</h3>
+            <p class="text-gray-400">플랫폼 이벤트와 특별 프로젝트 참여 등 더 큰 성장의 기회를 제공합니다.</p>
+          </div>
+          <div class="card-bg p-8 rounded-2xl text-center" data-aos="fade-up" data-aos-delay="350">
+            <div class="text-cyan-400 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">병행 작업 기능</h3>
+            <p class="text-gray-400">여러 의뢰를 동시에 효율적으로 진행할 수 있도록 적극 지원합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revenue Models Section -->
+    <section id="revenue" class="py-20 md:py-32 px-6">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title text-white">Maximize Your <span class="text-yellow-400">Revenue</span></h2>
+          <p class="mt-4 text-lg text-gray-400">하나의 창작물로 시작되는 무한한 수익 창출의 기회.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in">
+            <h3 class="text-xl font-bold text-yellow-400">커스터마이징 의뢰</h3>
+            <p class="text-sm text-gray-400 mt-1">1:1 맞춤 제작</p>
+          </div>
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="50">
+            <h3 class="text-xl font-bold text-yellow-400">기성 스킨/아이템 판매</h3>
+            <p class="text-sm text-gray-400 mt-1">미리 제작된 에셋 판매</p>
+          </div>
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="text-xl font-bold text-yellow-400">버튜버 데뷔 트랙</h3>
+            <p class="text-sm text-gray-400 mt-1">캐릭터 데뷔 프로젝트</p>
+          </div>
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="150">
+            <h3 class="text-xl font-bold text-yellow-400">NFT 아이템 판매</h3>
+            <p class="text-sm text-gray-400 mt-1">디지털 소유권 증명</p>
+          </div>
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="200">
+            <h3 class="text-xl font-bold text-yellow-400">글로벌 스킨 경매</h3>
+            <p class="text-sm text-gray-400 mt-1">한정판 스킨 옥션</p>
+          </div>
+          <div class="card-bg p-6 rounded-2xl text-center" data-aos="zoom-in" data-aos-delay="250">
+            <h3 class="text-xl font-bold text-yellow-400">스킨 패키지 번들</h3>
+            <p class="text-sm text-gray-400 mt-1">테마별 아이템 묶음 판매</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent & Secure Section -->
+    <section id="transparent-secure" class="py-20 md:py-32 px-6 bg-[#110F19]">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="section-title text-white">Transparent & <span class="text-purple-400">Secure</span></h2>
+          <p class="mt-4 text-lg text-gray-400">스마트 컨트랙트 기반의 단계별 즉시 정산 시스템으로 분쟁은 없애고 신뢰는 높입니다.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto relative" data-aos="fade-up">
+          <!-- Vertical line -->
+          <div class="absolute left-6 top-0 h-full w-0.5 bg-purple-700/30"></div>
+
+          <div class="space-y-12">
+            <!-- Step 1 -->
+            <div class="relative pl-16">
+              <div
+                class="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center ring-4 ring-purple-700/50">
+                <span class="font-poppins font-bold text-purple-300 text-2xl">1</span>
+              </div>
+              <div class="card-bg p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-white">컨셉 및 디자인 시안 (15%)</h3>
+                <p class="text-gray-400 mt-2">프로젝트의 첫 단계를 완료하고 안정적으로 첫 수익을 정산받으세요.</p>
+              </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="relative pl-16">
+              <div
+                class="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center ring-4 ring-purple-700/50">
+                <span class="font-poppins font-bold text-purple-300 text-2xl">2</span>
+              </div>
+              <div class="card-bg p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-white">기본 바디 모델링 (20%)</h3>
+                <p class="text-gray-400 mt-2">캐릭터의 기본 형태가 완성되면, 다음 단계의 수익이 즉시 지급됩니다.</p>
+              </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="relative pl-16">
+              <div
+                class="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center ring-4 ring-purple-700/50">
+                <span class="font-poppins font-bold text-purple-300 text-2xl">3</span>
+              </div>
+              <div class="card-bg p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-white">의상 및 액세서리 작업 (25%)</h3>
+                <p class="text-gray-400 mt-2">캐릭터에 생명을 불어넣는 디테일 작업의 가치를 인정받습니다.</p>
+              </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="relative pl-16">
+              <div
+                class="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center ring-4 ring-purple-700/50">
+                <span class="font-poppins font-bold text-purple-300 text-2xl">4</span>
+              </div>
+              <div class="card-bg p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-white">표정 및 모션 세팅 (25%)</h3>
+                <p class="text-gray-400 mt-2">캐릭터의 감정을 표현하는 중요한 작업의 대가가 지급됩니다.</p>
+              </div>
+            </div>
+            <!-- Step 5 -->
+            <div class="relative pl-16">
+              <div
+                class="absolute left-6 top-1/2 -translate-y-1/2 -translate-x-1/2 w-12 h-12 bg-purple-900 rounded-full flex items-center justify-center ring-4 ring-purple-700/50">
+                <span class="font-poppins font-bold text-purple-300 text-2xl">5</span>
+              </div>
+              <div class="card-bg p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-white">최종 테스트 & 납품 (15%)</h3>
+                <p class="text-gray-400 mt-2">프로젝트를 성공적으로 마무리하고 최종 수익을 정산받습니다.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-500 mt-8">
+            ※ 위 내용은 예시이며, 실제 정산 비율은 메이커분들과의 논의를 통해 유연하게 조정될 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20 md:py-32 px-6">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="text-center mb-20" data-aos="fade-up">
+          <h2 class="section-title text-white">Our <span class="text-pink-400">Journey</span></h2>
+          <p class="mt-4 text-lg text-gray-400">우리의 여정은 커뮤니티와 함께 만들어갑니다.</p>
+        </div>
+
+        <div class="relative w-full max-w-4xl mx-auto">
+          <!-- The vertical line -->
+          <div class="absolute top-0 h-full w-0.5 left-4 md:left-1/2 -ml-px roadmap-line"></div>
+
+          <div class="space-y-16">
+            <!-- Roadmap Item 1 -->
+            <div class="relative" data-aos="fade-up">
+              <div class="md:flex items-center">
+                <div class="md:w-1/2 md:pr-8 md:text-right">
+                  <!-- Mobile only dot -->
+                  <div class="md:hidden absolute top-1 left-0 h-full flex items-start">
+                    <div
+                      class="h-8 w-8 rounded-full bg-purple-600 roadmap-dot flex-shrink-0 -translate-x-1/2 translate-y-1">
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                  <div class="roadmap-card p-6 rounded-2xl ml-12 md:ml-0">
+                    <p class="text-sm font-bold text-pink-400">Phase 01 (현재 진행중)</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">커뮤니티 빌드업</h3>
+                    <ul class="mt-3 text-gray-400 list-disc list-inside">
+                      <li>디스코드 커뮤니티 운영</li>
+                      <li>메이커 모집 & 포트폴리오 공유</li>
+                      <li>소규모 이벤트 진행</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Desktop dot -->
+              <div
+                class="hidden md:block absolute top-8 left-1/2 h-4 w-4 rounded-full bg-purple-600 roadmap-dot -translate-x-1/2">
+              </div>
+            </div>
+
+            <!-- Roadmap Item 2 -->
+            <div class="relative" data-aos="fade-up">
+              <div class="md:flex items-center md:flex-row-reverse">
+                <div class="md:w-1/2 md:pl-8 md:text-left">
+                  <!-- Mobile only dot -->
+                  <div class="md:hidden absolute top-1 left-0 h-full flex items-start">
+                    <div
+                      class="h-8 w-8 rounded-full bg-purple-600 roadmap-dot flex-shrink-0 -translate-x-1/2 translate-y-1">
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 md:pr-8 md:text-right">
+                  <div class="roadmap-card p-6 rounded-2xl ml-12 md:ml-0 md:mr-0">
+                    <p class="text-sm font-bold text-cyan-400">Phase 02 (Coming Soon)</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">베타 플랫폼 런칭</h3>
+                    <ul class="mt-3 text-gray-400 list-disc list-inside text-left md:text-right">
+                      <li>초기 메이커 우선 입점</li>
+                      <li>커스터마이징 및 기성 스킨 판매 시작</li>
+                      <li>글로벌 결제 지원</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Desktop dot -->
+              <div
+                class="hidden md:block absolute top-8 left-1/2 h-4 w-4 rounded-full bg-purple-600 roadmap-dot -translate-x-1/2">
+              </div>
+            </div>
+
+            <!-- Roadmap Item 3 -->
+            <div class="relative" data-aos="fade-up">
+              <div class="md:flex items-center">
+                <div class="md:w-1/2 md:pr-8 md:text-right">
+                  <!-- Mobile only dot -->
+                  <div class="md:hidden absolute top-1 left-0 h-full flex items-start">
+                    <div
+                      class="h-8 w-8 rounded-full bg-purple-600 roadmap-dot flex-shrink-0 -translate-x-1/2 translate-y-1">
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                  <div class="roadmap-card p-6 rounded-2xl ml-12 md:ml-0">
+                    <p class="text-sm font-bold text-yellow-400">Phase 03</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">정식 런칭</h3>
+                    <ul class="mt-3 text-gray-400 list-disc list-inside">
+                      <li>NFT 마켓 및 버튜버 데뷔 트랙 오픈</li>
+                      <li>한정판 경매 이벤트 진행</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Desktop dot -->
+              <div
+                class="hidden md:block absolute top-8 left-1/2 h-4 w-4 rounded-full bg-purple-600 roadmap-dot -translate-x-1/2">
+              </div>
+            </div>
+
+            <!-- Roadmap Item 4 -->
+            <div class="relative" data-aos="fade-up">
+              <div class="md:flex items-center md:flex-row-reverse">
+                <div class="md:w-1/2 md:pl-8 md:text-left">
+                  <!-- Mobile only dot -->
+                  <div class="md:hidden absolute top-1 left-0 h-full flex items-start">
+                    <div
+                      class="h-8 w-8 rounded-full bg-purple-600 roadmap-dot flex-shrink-0 -translate-x-1/2 translate-y-1">
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-1/2 md:pr-8 md:text-right">
+                  <div class="roadmap-card p-6 rounded-2xl ml-12 md:ml-0 md:mr-0">
+                    <p class="text-sm font-bold text-green-400">Phase 04</p>
+                    <h3 class="text-2xl font-bold text-white mt-1">확장 & 콜라보</h3>
+                    <ul class="mt-3 text-gray-400 list-disc list-inside text-left md:text-right">
+                      <li>유명 IP 콜라보</li>
+                      <li>오프라인 전시 및 글로벌 밋업</li>
+                      <li>메이커 로열티 프로그램</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Desktop dot -->
+              <div
+                class="hidden md:block absolute top-8 left-1/2 h-4 w-4 rounded-full bg-purple-600 roadmap-dot -translate-x-1/2">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="discord" class="py-20 md:py-32 px-6 text-center bg-cover bg-center"
+      style="background-image: linear-gradient(rgba(13, 11, 20, 0.8), rgba(13, 11, 20, 1)), url('https://placehold.co/1920x1080/1E1C29/8A2BE2?text=Community+Art')">
+      <div class="container mx-auto max-w-6xl" data-aos="zoom-in">
+        <h2 class="section-title text-white">Be the <span class="text-pink-400">First.</span></h2>
+        <p class="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+          가장 먼저 기회를 잡으세요. 지금 바로 아이돌 아일랜드 디스코드에 참여하여 전 세계 메이커들과 교류하고, 초기 프로젝트의 주인공이 되어보세요.
+        </p>
+        <p class="mt-2 text-lg text-yellow-400 font-bold">런칭 시 우선 입점 기회는 오직 커뮤니티 멤버에게만 주어집니다.</p>
+        <div class="mt-10">
+          <a href="#" class="inline-block btn-primary text-white font-bold text-xl rounded-full px-12 py-5 shadow-lg">
+            디스코드 커뮤니티 바로가기
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0A080F] text-center p-8">
+    <p class="font-poppins text-lg font-bold text-white">IDOL ISLAND</p>
+    <p class="text-gray-500 mt-2">&copy; 2025 Idol Island. All rights reserved. A New Universe for Creators.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

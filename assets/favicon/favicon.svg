@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1320)"><rect width="1000" height="1000" fill="#04000a"></rect><g transform="matrix(18.75,0,0,18.75,50,50)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" aria-labelledby="title">
+  <title id="title">Idol Island favicon</title>
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff66aa"></stop>
+      <stop offset="100%" stop-color="#cc66ff"></stop>
+    </linearGradient>
+  <clipPath id="SvgjsClipPath1320"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs>
+
+  <!-- "I" -->
+  <text x="4" y="34" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" fill="url(#grad1)">I</text>
+
+  <!-- 둥근 모서리 별, I와 16px 간격 유지 (I 오른쪽 끝이 약 x=14 → 별 시작 x≈30) -->
+  <path fill="url(#grad1)" d="
+    M30 14
+    Q30.4 14.2 30.6 14.6
+    L32.9 19
+    Q33.1 19.4 33.6 19.5
+    L38.5 20.2
+    Q39.1 20.3 39.3 20.9
+    Q39.5 21.5 39.1 22
+    L35.6 25.8
+    Q35.3 26.2 35.4 26.7
+    L36.3 31.6
+    Q36.4 32.2 36 32.6
+    Q35.6 33 35 32.9
+    L30.2 30.8
+    Q29.8 30.6 29.4 30.8
+    L24.6 32.9
+    Q24.0 33.1 23.6 32.6
+    Q23.2 32.2 23.3 31.6
+    L24.2 26.7
+    Q24.3 26.2 24.0 25.8
+    L20.5 22
+    Q20.1 21.5 20.3 20.9
+    Q20.5 20.3 21.1 20.2
+    L26 19.5
+    Q26.5 19.4 26.7 19
+    L29 14.6
+    Q29.2 14.2 29.6 14
+    Q30 13.8 30 14
+    Z"></path>
+</svg></svg></g></g></svg>
