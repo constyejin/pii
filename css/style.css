@@ -122,3 +122,16 @@ body {
 .comparison-row:last-child {
   border-bottom: none;
 }
+
+.gnb_logo {
+  width: 80px;
+}
+
+.logo {
+  width: 50%;
+  margin: 0 auto
+}
+
+.logo img {
+  object-fit: contain;
+}
